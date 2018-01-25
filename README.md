@@ -5,3 +5,5 @@ ini adalah website untuk post text macam twiter
 mysql
 php
 senang cite webserver lah
+
+<img src="/scrnsht.png" height="300" width="450">
