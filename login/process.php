@@ -13,16 +13,16 @@ $password = mysql_real_escape_string($password);
 
 // connect tot he server and select database
 mysql_connect("localhost","root","norzain");
-mysql_select_db("login");
+mysql_select_db("zebbo");
 
 // query the database for user
 
-$result = mysql_query("SELECT * FROM users WHERE username = '$username' AND password = '$password'") or die("Failed to query database.".mysql_error());
+$result = mysql_query("SELECT * FROM login WHERE username = '$username' AND password = '$password'") or die("Failed to query database.".mysql_error());
 
 $now = mysql_fetch_array($result);
 
 if ($now['username'] == $username && $now['password'] == $password) {
-	echo "Log in success! Welcome".$now['username'];
+	echo "Log in success! Welcome ".$now['username'];
 }
 else{
 
