@@ -3,9 +3,10 @@
 	<head>
 		<title>LOG IN
 		</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 <body>
-
+<header>QUACKER</header>
 <div id='frm'>
 	<form action="process.php" method="POST">
 		<p>
@@ -17,9 +18,10 @@
 			<input type="password" id="pass" name="pass" />
 		</p>
 		<p>
-			<input type="submit" id="btn" name="login" />
+			<input type="submit" id="btn" name="login" value="Log in" />
 		</p>
 	</form>
+	<div id="foot">zahiruddin 2018</div>
 </div>
 
 </body>

@@ -23,6 +23,7 @@ $now = mysql_fetch_array($result);
 
 if ($now['username'] == $username && $now['password'] == $password) {
 	echo "Log in success! Welcome ".$now['username'];
+	header("refresh:0; url=./main.php");
 }
 else{
 
