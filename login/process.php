@@ -15,6 +15,8 @@ $password = mysql_real_escape_string($password);
 mysql_connect("localhost","root","norzain");
 mysql_select_db("zebbo");
 
+
+
 // query the database for user
 
 $result = mysql_query("SELECT * FROM login WHERE username = '$username' AND password = '$password'") or die("Failed to query database.".mysql_error());
@@ -23,7 +25,7 @@ $now = mysql_fetch_array($result);
 
 if ($now['username'] == $username && $now['password'] == $password) {
 	echo "Log in success! Welcome ".$now['username'];
-	header("refresh:0; url=./main.php");
+	header("refresh:0; url=../main.php");
 }
 else{
 
